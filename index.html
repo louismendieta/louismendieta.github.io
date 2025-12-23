@@ -13,7 +13,6 @@
       color: #222;
     }
 
-    /* ===== HEADER ===== */
     header {
       background: linear-gradient(135deg, #861F41, #4a0e24);
       color: white;
@@ -21,18 +20,6 @@
       text-align: center;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      opacity: 0.9;
-    }
-
-    /* ===== SECTIONS ===== */
     section {
       max-width: 1100px;
       margin: 4rem auto;
@@ -41,69 +28,66 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
-    /* ===== ABOUT ===== */
-    .about-container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
+    /* ===== CONTACT FORM ===== */
+    .contact-form-container {
+      max-width: 700px;
+      margin: 0 auto;
       background: white;
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      align-items: center;
     }
 
-    .about-container img {
-      width: 100%;
-      height: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
 
-    /* ===== PROJECTS ===== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+    .form-row {
+      display: flex;
+      gap: 1rem;
     }
 
-    .project-card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
     }
 
-    .project-card:hover {
-      transform: translateY(-5px);
+    textarea {
+      min-height: 140px;
+      resize: vertical;
     }
 
-    .project-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
+    button {
+      background-color: #861F41;
+      color: white;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .project-content {
-      padding: 1.2rem;
+    button:hover {
+      background-color: #6d1634;
     }
 
-    /* ===== CONTACT ===== */
-    .contact {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
+    /* ===== SOCIAL LINKS ===== */
+    .social-links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
     }
 
-    .contact a {
+    .social-links a {
       color: #861F41;
       font-weight: bold;
       text-decoration: none;
@@ -116,10 +100,9 @@
       font-size: 0.9rem;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .about-container {
-        grid-template-columns: 1fr;
+    @media (max-width: 600px) {
+      .form-row {
+        flex-direction: column;
       }
     }
   </style>
@@ -127,82 +110,39 @@
 
 <body>
 
-<!-- ===== HOME ===== -->
 <header>
   <h1>Louis Mendieta</h1>
   <p>Mechanical Engineering | Engineering Portfolio</p>
 </header>
 
-<!-- ===== ABOUT ===== -->
-<section>
-  <h2>Little About Me</h2>
-
-  <div class="about-container">
-    <div>
-      <p>
-        Hello, I am Louis Mendieta. I am a rising sophomore majoring in
-        mechanical engineering.
-      </p>
-      <p>
-        During my engineering journey, I have remained dedicated to my studies,
-        actively pursued new opportunities, and consistently put forth my best effort.
-      </p>
-      <p>
-        One of those opportunities was learning and practicing welding, which gave me
-        valuable hands-on experience and deepened my interest in building and design.
-        I mainly developed this skill as a member of the Hypernova Solar Racing Team at GMU.
-      </p>
-    </div>
-
-    <img src="assets/about.jpg" alt="Louis Mendieta">
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section>
-  <h2>Projects</h2>
-
-  <div class="projects">
-
-    <div class="project-card">
-      <a href="drone.html">
-        <img src="assets/drone.jpg" alt="Unmanned Drone Prototyping">
-      </a>
-      <div class="project-content">
-        <h3>Unmanned Drone Prototyping</h3>
-        <p>Hands-on UAV design, assembly, and flight testing.</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <a href="rocketry.html">
-        <img src="assets/rocketry.jpg" alt="High Power Rocketry">
-      </a>
-      <div class="project-content">
-        <h3>High Power Rocketry</h3>
-        <p>Competition rocket design and fabrication.</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/placeholder.jpg" alt="Future Project">
-      <div class="project-content">
-        <h3>Future Project</h3>
-        <p>Additional engineering projects coming soon.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
 <section>
   <h2>Get in Touch</h2>
 
-  <div class="contact">
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/louismendieta" target="_blank">github.com/louismendieta</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
+  <div class="contact-form-container">
+
+    <!-- THIS IS WHAT "POSTING THE FORM" MEANS -->
+    <form action="https://formspree.io/f/mzdpkqpl" method="POST">
+
+      <div class="form-row">
+        <input type="text" name="first-name" placeholder="First Name *" required>
+        <input type="text" name="last-name" placeholder="Last Name *" required>
+      </div>
+
+      <input type="email" name="email" placeholder="Email *" required>
+
+      <input type="tel" name="phone" placeholder="Phone (optional)">
+
+      <textarea name="message" placeholder="Your Message *" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://instagram.com/YOURUSERNAME" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank">LinkedIn</a>
+      <a href="https://discord.com/users/YOURID" target="_blank">Discord</a>
+    </div>
+
   </div>
 </section>
 
