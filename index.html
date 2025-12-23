@@ -5,142 +5,20 @@
   <title>Louis Mendieta | Engineering Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  <!-- SEO -->
+  <meta name="description" content="Louis Mendieta engineering portfolio. Mechanical engineering student with interests in design, propulsion, and applied engineering.">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f8;
-      color: #222;
-    }
-
-    /* NAVBAR */
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      border-bottom: 1px solid #ddd;
-      z-index: 100;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #861F41;
-    }
-
-    /* HERO / HOME */
-    header {
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-
-      /* Engineering-style background */
-      background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        radial-gradient(circle at top, #1f2933, #0f172a);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      letter-spacing: 1px;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .hero-buttons a {
-      padding: 0.8rem 1.6rem;
-      border-radius: 30px;
-      border: 2px solid white;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .hero-buttons a:hover {
-      background: white;
-      color: #0f172a;
-    }
-
-    /* SECTIONS */
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-
-    .project {
-      margin-top: 1.5rem;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #861F41;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">About Me</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -148,73 +26,76 @@
 
   <!-- HOME -->
   <header id="home">
-    <div>
+    <div class="hero-content">
       <h1>Louis Mendieta</h1>
       <p>Engineering Portfolio</p>
-
-      <div class="hero-buttons">
-        <a href="#portfolio">View Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="#about" class="cta">Learn More</a>
     </div>
   </header>
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="card">
-      <h2>About Me</h2>
-      <p>
-        I am a mechanical engineering student transferring to Virginia Tech in Fall 2025.
-        My interests include mechanical design, propulsion systems, and applied engineering
-        analysis.
-      </p>
-      <p>
-        I have gained hands-on experience through coursework and team involvement,
-        including welding and mechanical fabrication as part of the Hypernova Solar Racing
-        Team at George Mason University.
-      </p>
+    <div class="container two-column">
+      <div>
+        <h2>Little About Me</h2>
+        <p>Hello, I am Louis Mendieta. Right now, I am a rising sophomore and majoring in mechanical engineering.</p>
+
+        <p>During my engineering journey, I have remained dedicated to my studies, actively pursued new opportunities, and consistently put forth my best effort.</p>
+
+        <p>
+          One of those opportunities was learning and practicing welding, which gave me valuable hands-on experience and deepened my interest in building and design.
+          I mainly developed this skill to help build the car frame as a member of the Hypernova Solar Racing Team at GMU.
+        </p>
+
+        <p><em>Fun facts coming soon…</em></p>
+      </div>
+
+      <div class="photo-placeholder">
+        Photo
+      </div>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
   <section id="portfolio">
-    <div class="card">
-      <h2>Portfolio</h2>
+    <div class="container">
+      <h2>Projects</h2>
 
-      <div class="project">
-        <h3>Projectile Motion Analysis</h3>
-        <p>
-          Studied two-dimensional projectile motion by separating horizontal and vertical
-          components and comparing experimental data with theoretical predictions.
-        </p>
-        <p><a href="#">View Project PDF</a></p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Projectile Motion Analysis</h3>
+          <p>Two-dimensional motion analysis using physics principles and computational tools.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Engineering Kinematics Study</h3>
+          <p>Position, velocity, and acceleration analysis applied to mechanical systems.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Solar Racing Team – Frame Fabrication</h3>
+          <p>Hands-on welding and mechanical fabrication for vehicle frame construction.</p>
+        </div>
       </div>
-
-      <div class="project">
-        <h3>Engineering Kinematics Study</h3>
-        <p>
-          Analyzed motion using position, velocity, and acceleration relationships with
-          applications in mechanical systems.
-        </p>
-        <p><a href="#">View Project PDF</a></p>
-      </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="card">
-      <h2>Contact</h2>
+    <div class="container">
+      <h2>Get in Touch</h2>
       <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/louismendieta">github.com/louismendieta</a></p>
-      <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
+      <p>GitHub: <a href="https://github.com/louismendieta" target="_blank">github.com/louismendieta</a></p>
     </div>
   </section>
 
   <footer>
     © 2025 Louis Mendieta
   </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
