@@ -11,69 +11,170 @@
       font-family: Arial, Helvetica, sans-serif;
       background-color: #f4f6f8;
       color: #222;
+      line-height: 1.6;
     }
 
+    /* ===== NAV ===== */
+    nav {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #861F41;
+      font-weight: bold;
+    }
+
+    /* ===== HEADER ===== */
     header {
-      background-color: #861F41;
+      background: linear-gradient(135deg, #861F41, #4a0e24);
       color: white;
-      padding: 2.5rem 1rem;
+      padding: 5rem 1rem;
       text-align: center;
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+
+    header p {
+      margin-top: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== CONTENT ===== */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 3rem auto;
       padding: 0 1rem;
     }
 
-    img {
-      width: 100%;
+    .card {
+      background: white;
+      padding: 2rem;
       border-radius: 8px;
-      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2.5rem;
     }
 
-    a {
+    .card h2 {
+      margin-top: 0;
       color: #861F41;
-      font-weight: bold;
-      text-decoration: none;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="index.html">← Back to Portfolio</a>
+</nav>
+
+<!-- ===== HEADER ===== -->
 <header>
-  <h1>Unmanned Drone Prototyping Course</h1>
+  <h1>Unmanned Drone Prototyping</h1>
+  <p>Hands-on UAV Design, Assembly, and Flight Testing</p>
 </header>
 
+<!-- ===== OVERVIEW ===== -->
 <section>
-  <p>
-    I participated in a 9-week course focused on designing, building,
-    and testing unmanned aerial vehicles (UAVs).
-  </p>
+  <div class="card">
+    <h2>Project Overview</h2>
+    <p>
+      I participated in a 9-week unmanned drone prototyping course where I gained hands-on
+      experience designing, building, and testing UAVs. This course provided exposure to
+      real-world aerospace systems and emphasized teamwork, troubleshooting, and iterative design.
+    </p>
 
-  <h3>Drone Kit Assembly</h3>
-  <p>
-    Built a functional UAV by assembling the frame, motors, ESCs,
-    and hand-soldering power and signal connections.
-  </p>
-
-  <img src="assets/drone.jpg" alt="Drone Assembly">
-
-  <h3>ArduPilot Configuration</h3>
-  <ul>
-    <li>Frame and motor calibration</li>
-    <li>RC link setup</li>
-    <li>Servo calibration</li>
-    <li>Flight modes: Stabilize, AltHold, Autonomous</li>
-  </ul>
-
-  <p>
-    Testing included bench tests, indoor flights, and outdoor trials.
-  </p>
-
-  <p><a href="index.html">← Back to Portfolio</a></p>
+    <img src="assets/drone.jpg" alt="Drone Project Overview">
+  </div>
 </section>
+
+<!-- ===== DRONE KIT ===== -->
+<section>
+  <div class="card">
+    <h2>Drone Kit Assembly</h2>
+    <p>
+      I built a functional UAV from a kit by assembling the frame, mounting motors and ESCs,
+      and ensuring proper mechanical alignment to prevent vibration and instability during flight.
+    </p>
+
+    <p>
+      I also hand-soldered the power and signal connections between the flight controller,
+      receivers, and servos to ensure reliable electrical connections.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SOFTWARE ===== -->
+<section>
+  <div class="card">
+    <h2>ArduPilot Configuration & Flight Control</h2>
+    <p>
+      In a group setting, we configured our UAV using ArduPilot software. This involved:
+    </p>
+
+    <ul>
+      <li>Frame configuration and motor calibration for stability</li>
+      <li>Establishing reliable RC communication links</li>
+      <li>Servo calibration for precise control response</li>
+      <li>Programming flight modes (Stabilize, AltHold, Autonomous)</li>
+    </ul>
+
+    <p>
+      We validated our setup through bench testing, indoor flight trials, and outdoor
+      test flights to improve reliability and performance.
+    </p>
+  </div>
+</section>
+
+<!-- ===== OUTCOMES ===== -->
+<section>
+  <div class="card">
+    <h2>Results & Skills Gained</h2>
+    <ul>
+      <li>Hands-on UAV mechanical and electrical assembly</li>
+      <li>Flight controller configuration and tuning</li>
+      <li>Soldering and wiring best practices</li>
+      <li>Team-based engineering problem solving</li>
+      <li>Flight testing and troubleshooting</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2025 Louis Mendieta
+</footer>
 
 </body>
 </html>
