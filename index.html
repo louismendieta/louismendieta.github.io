@@ -95,37 +95,34 @@
     }
 
     /* ===== CONTACT ===== */
-    .contact {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+    <!-- ===== CONTACT ===== -->
+<section>
+  <h2>Get in Touch</h2>
 
-    .contact a {
-      color: #861F41;
-      font-weight: bold;
-      text-decoration: none;
-    }
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mzdpkqpl" method="POST">
+      
+      <div class="row">
+        <input type="text" name="first-name" placeholder="First Name *" required>
+        <input type="text" name="last-name" placeholder="Last Name *" required>
+      </div>
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
+      <input type="email" name="email" placeholder="Email *" required>
+      <input type="tel" name="phone" placeholder="Phone (optional)">
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .about-container {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
+      <textarea name="message" placeholder="Message *" required></textarea>
 
-<body>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-socials">
+      <a href="https://instagram.com/louis.m.75" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/https://www.linkedin.com/in/louis-mendieta" target="_blank">LinkedIn</a>
+      <a href="https://discord.com/users/YOUR_ID" target="_blank">Discord</a>
+    </div>
+  </div>
+</section>
+
 
 <!-- ===== HOME ===== -->
 <header>
