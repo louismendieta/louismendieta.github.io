@@ -57,20 +57,6 @@ header {
 
 .hero-content p {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.cta {
-  padding: 0.8rem 1.6rem;
-  border: 2px solid white;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-.cta:hover {
-  background: white;
-  color: #0f172a;
 }
 
 /* SECTIONS */
@@ -81,20 +67,6 @@ section {
 .container {
   max-width: 1000px;
   margin: auto;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-}
-
-.photo-placeholder {
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #555;
 }
 
 /* PROJECT GRID */
@@ -111,36 +83,10 @@ section {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* IMAGE HOVER EFFECT */
-.project-image {
-  position: relative;
-  display: block;
-}
-
-.project-image img {
+.project-card img {
   width: 100%;
   border-radius: 8px;
-}
-
-.project-image .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 8px;
-  text-align: center;
-  padding: 1rem;
-}
-
-.project-image:hover .overlay {
-  opacity: 1;
+  margin-bottom: 1rem;
 }
 
 /* FOOTER */
