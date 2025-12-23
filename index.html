@@ -45,23 +45,53 @@
       color: #861F41;
     }
 
-    /* HERO */
+    /* HERO / HOME */
     header {
-      background-color: #861F41;
-      color: white;
-      padding: 4rem 1rem;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: white;
+
+      /* Engineering-style background */
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        radial-gradient(circle at top, #1f2933, #0f172a);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.8rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      margin-top: 0.8rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
       opacity: 0.9;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-buttons a {
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background: white;
+      color: #0f172a;
     }
 
     /* SECTIONS */
@@ -110,7 +140,7 @@
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -118,8 +148,15 @@
 
   <!-- HOME -->
   <header id="home">
-    <h1>Louis Mendieta</h1>
-    <p>Mechanical Engineering Student | Engineering Portfolio</p>
+    <div>
+      <h1>Louis Mendieta</h1>
+      <p>Engineering Portfolio</p>
+
+      <div class="hero-buttons">
+        <a href="#portfolio">View Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </header>
 
   <!-- ABOUT -->
@@ -127,9 +164,57 @@
     <div class="card">
       <h2>About Me</h2>
       <p>
-        Hello, I am Louis Mendieta. I am a mechanical engineering student transferring
-        to Virginia Tech in Fall 2025.
+        I am a mechanical engineering student transferring to Virginia Tech in Fall 2025.
+        My interests include mechanical design, propulsion systems, and applied engineering
+        analysis.
       </p>
       <p>
-        During my engineering journey, I have remained dedicated to my studies,
-        actively pursued hands-on opportunities, and consistently put forth my best
+        I have gained hands-on experience through coursework and team involvement,
+        including welding and mechanical fabrication as part of the Hypernova Solar Racing
+        Team at George Mason University.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="card">
+      <h2>Portfolio</h2>
+
+      <div class="project">
+        <h3>Projectile Motion Analysis</h3>
+        <p>
+          Studied two-dimensional projectile motion by separating horizontal and vertical
+          components and comparing experimental data with theoretical predictions.
+        </p>
+        <p><a href="#">View Project PDF</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Engineering Kinematics Study</h3>
+        <p>
+          Analyzed motion using position, velocity, and acceleration relationships with
+          applications in mechanical systems.
+        </p>
+        <p><a href="#">View Project PDF</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/louismendieta">github.com/louismendieta</a></p>
+      <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Louis Mendieta
+  </footer>
+
+</body>
+</html>
