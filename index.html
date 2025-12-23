@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -14,11 +18,40 @@
       line-height: 1.6;
     }
 
+    /* ===== NAV ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #861F41;
+    }
+
     /* ===== HERO ===== */
     header {
       background: linear-gradient(135deg, #861F41, #4a0e24);
       color: white;
-      padding: 7rem 1rem;
+      padding: 9rem 1rem 7rem;
       text-align: center;
     }
 
@@ -38,6 +71,7 @@
       max-width: 1100px;
       margin: 4rem auto;
       padding: 0 1rem;
+      scroll-margin-top: 90px;
     }
 
     h2 {
@@ -94,10 +128,6 @@
       padding: 1.2rem;
     }
 
-    .project-content h3 {
-      margin-top: 0;
-    }
-
     /* ===== CONTACT ===== */
     .contact-form {
       background: white;
@@ -125,7 +155,6 @@
       padding: 0.8rem;
       border-radius: 5px;
       border: 1px solid #ccc;
-      font-family: inherit;
     }
 
     .contact-form textarea {
@@ -181,35 +210,52 @@
 
 <body>
 
+<!-- ===== NAV ===== -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <!-- ===== HOME ===== -->
-<header>
+<header id="home">
   <h1>Louis Mendieta</h1>
-  <p>Mechanical Engineering | Engineering Portfolio</p>
+  <p>Mechanical Engineering | Propulsion Systems | Virginia Tech</p>
 </header>
 
 <!-- ===== ABOUT ===== -->
-<section>
+<section id="about">
   <h2>Little About Me</h2>
 
   <div class="about-container">
     <div>
-      <p>Hello, I am Louis Mendieta. I am a rising junior majoring in mechanical engineering with a concentration in propulsion systems at Virginia Tech.</p>
+      <p>
+        Hello, I am Louis Mendieta. I am a rising junior majoring in mechanical engineering
+        with a concentration in propulsion systems at Virginia Tech.
+      </p>
+
       <p>
         Through my undergraduate years, I have been excelling in my studies, actively pursuing
-        new opportunities such as engineering research, design teams, internships, and work-studies, and consistently putting forth my best effort.
+        new opportunities such as engineering research, design teams, internships, and work-studies,
+        and consistently putting forth my best effort.
       </p>
+
       <p>
-        One of the things I enjoy is working and learning in any engineering applications. I aim to work on different projects I have not yet grasped
-        to earn knowledge and experience to be the best fit leader among my class and job.
+        One of the things I enjoy is working and learning in any engineering application.
+        I aim to work on different projects I have not yet grasped to gain knowledge and experience
+        and become a strong leader among my peers and future workplace.
       </p>
     </div>
 
-    <img src="assets/about.jpg" alt="About Louis Mendieta">
+    <img src="assets/about.jpg" alt="Louis Mendieta">
   </div>
 </section>
 
 <!-- ===== PROJECTS ===== -->
-<section>
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="projects">
@@ -220,7 +266,7 @@
       </a>
       <div class="project-content">
         <h3>Unmanned Drone Prototyping</h3>
-        <p>UAV Computer-Aided Design, assembly, and flight testing 2025.</p>
+        <p>Hands-on UAV design, assembly, and flight testing.</p>
       </div>
     </div>
 
@@ -230,7 +276,7 @@
       </a>
       <div class="project-content">
         <h3>High Power Rocketry</h3>
-        <p>Competition rocket 2024-2025.</p>
+        <p>Competition rocket design and fabrication.</p>
       </div>
     </div>
 
@@ -246,7 +292,7 @@
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section>
+<section id="contact">
   <h2>Get in Touch</h2>
 
   <div class="contact-form">
@@ -258,8 +304,6 @@
       </div>
 
       <input type="email" name="email" placeholder="Email *" required>
-      <input type="tel" name="phone" placeholder="Phone (optional)">
-
       <textarea name="message" placeholder="Message *" required></textarea>
 
       <button type="submit">Send Message</button>
@@ -267,8 +311,8 @@
 
     <div class="contact-socials">
       <a href="https://github.com/louismendieta" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/louis-mendieta" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/louis.m.75" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/louis-mendieta" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/louis.m.75" target="_blank">Instagram</a>
     </div>
   </div>
 </section>
