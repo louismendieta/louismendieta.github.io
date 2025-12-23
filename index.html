@@ -13,10 +13,9 @@
       color: #222;
     }
 
-    /* ---------- HEADER ---------- */
+    /* ---------- HEADER (NO IMAGE) ---------- */
     header {
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                  url("assets/placeholder.jpg") center/cover no-repeat;
+      background: linear-gradient(135deg, #861F41, #4a0e24);
       color: white;
       padding: 7rem 1rem;
       text-align: center;
@@ -42,15 +41,24 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     /* ---------- ABOUT ---------- */
-    .about {
+    .about-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
       background: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .about-container img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
     /* ---------- PROJECTS ---------- */
@@ -104,6 +112,13 @@
       color: #666;
       font-size: 0.9rem;
     }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .about-container {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -117,20 +132,25 @@
 <!-- ABOUT -->
 <section>
   <h2>Little About Me</h2>
-  <div class="about">
-    <p>
-      Hello, I am Louis Mendieta. I am a rising sophomore majoring in
-      mechanical engineering.
-    </p>
-    <p>
-      During my engineering journey, I have remained dedicated to my studies,
-      actively pursued new opportunities, and consistently put forth my best effort.
-    </p>
-    <p>
-      One of those opportunities was learning and practicing welding, which gave me
-      valuable hands-on experience and deepened my interest in building and design.
-      I mainly developed this skill as a member of the Hypernova Solar Racing Team at GMU.
-    </p>
+  <div class="about-container">
+    <div>
+      <p>
+        Hello, I am Louis Mendieta. I am a rising sophomore majoring in
+        mechanical engineering.
+      </p>
+      <p>
+        During my engineering journey, I have remained dedicated to my studies,
+        actively pursued new opportunities, and consistently put forth my best effort.
+      </p>
+      <p>
+        One of those opportunities was learning and practicing welding, which gave me
+        valuable hands-on experience and deepened my interest in building and design.
+        I mainly developed this skill as a member of the Hypernova Solar Racing Team at GMU.
+      </p>
+    </div>
+
+    <!-- ABOUT IMAGE -->
+    <img src="assets/placeholder.jpg" alt="About Me Image">
   </div>
 </section>
 
@@ -140,7 +160,6 @@
 
   <div class="projects">
 
-    <!-- DRONE -->
     <div class="project-card">
       <a href="drone.html">
         <img src="assets/drone.jpg" alt="Unmanned Drone Prototyping">
@@ -151,18 +170,16 @@
       </div>
     </div>
 
-    <!-- ROCKETRY -->
     <div class="project-card">
       <a href="rocketry.html">
         <img src="assets/rocketry.jpg" alt="High Power Rocketry">
       </a>
       <div class="project-content">
         <h3>High Power Rocketry</h3>
-        <p>Competition rocket design, fabrication, and testing.</p>
+        <p>Competition rocket design and fabrication.</p>
       </div>
     </div>
 
-    <!-- FUTURE -->
     <div class="project-card">
       <img src="assets/placeholder.jpg" alt="Future Project">
       <div class="project-content">
