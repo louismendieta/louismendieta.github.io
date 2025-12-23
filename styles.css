@@ -132,8 +132,8 @@ h2 {
 
 .project-image img {
   width: 100%;
-  height: 220px;        /* SAME SIZE FOR ALL */
-  object-fit: cover;   /* crop without stretching */
+  height: 220px;
+  object-fit: cover;
   display: block;
 }
 
