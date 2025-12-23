@@ -13,11 +13,12 @@
       color: #222;
     }
 
+    /* ---------- HEADER ---------- */
     header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
                   url("assets/placeholder.jpg") center/cover no-repeat;
       color: white;
-      padding: 6rem 1rem;
+      padding: 7rem 1rem;
       text-align: center;
     }
 
@@ -32,9 +33,10 @@
       opacity: 0.9;
     }
 
+    /* ---------- SECTIONS ---------- */
     section {
       max-width: 1100px;
-      margin: 3rem auto;
+      margin: 4rem auto;
       padding: 0 1rem;
     }
 
@@ -43,6 +45,15 @@
       margin-bottom: 2rem;
     }
 
+    /* ---------- ABOUT ---------- */
+    .about {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* ---------- PROJECTS ---------- */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -65,20 +76,26 @@
       width: 100%;
       height: 220px;
       object-fit: cover;
+      display: block;
     }
 
     .project-content {
       padding: 1.2rem;
     }
 
-    .project-content h3 {
-      margin-top: 0;
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
-    .project-content a {
-      text-decoration: none;
+    .contact a {
       color: #861F41;
       font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
@@ -97,37 +114,73 @@
   <p>Mechanical Engineering | Engineering Portfolio</p>
 </header>
 
+<!-- ABOUT -->
+<section>
+  <h2>Little About Me</h2>
+  <div class="about">
+    <p>
+      Hello, I am Louis Mendieta. I am a rising sophomore majoring in
+      mechanical engineering.
+    </p>
+    <p>
+      During my engineering journey, I have remained dedicated to my studies,
+      actively pursued new opportunities, and consistently put forth my best effort.
+    </p>
+    <p>
+      One of those opportunities was learning and practicing welding, which gave me
+      valuable hands-on experience and deepened my interest in building and design.
+      I mainly developed this skill as a member of the Hypernova Solar Racing Team at GMU.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
 
   <div class="projects">
 
+    <!-- DRONE -->
     <div class="project-card">
-      <img src="assets/drone.jpg" alt="Drone Project">
+      <a href="drone.html">
+        <img src="assets/drone.jpg" alt="Unmanned Drone Prototyping">
+      </a>
       <div class="project-content">
         <h3>Unmanned Drone Prototyping</h3>
         <p>Hands-on UAV design, assembly, and flight testing.</p>
-        <a href="drone.html">View Project →</a>
       </div>
     </div>
 
+    <!-- ROCKETRY -->
     <div class="project-card">
-      <img src="assets/rocketry.jpg" alt="Rocketry Project">
+      <a href="rocketry.html">
+        <img src="assets/rocketry.jpg" alt="High Power Rocketry">
+      </a>
       <div class="project-content">
         <h3>High Power Rocketry</h3>
-        <p>Competition rocket design and fabrication.</p>
-        <a href="rocketry.html">View Project →</a>
+        <p>Competition rocket design, fabrication, and testing.</p>
       </div>
     </div>
 
+    <!-- FUTURE -->
     <div class="project-card">
       <img src="assets/placeholder.jpg" alt="Future Project">
       <div class="project-content">
         <h3>Future Project</h3>
-        <p>More engineering work coming soon.</p>
+        <p>Additional engineering projects coming soon.</p>
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Get in Touch</h2>
+  <div class="contact">
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/louismendieta" target="_blank">github.com/louismendieta</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
   </div>
 </section>
 
