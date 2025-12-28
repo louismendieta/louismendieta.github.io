@@ -65,10 +65,13 @@
       color: #861F41;
     }
 
+    /* ===== IMAGE FIX (NO TRIMMING) ===== */
     .card img {
       width: 100%;
-      max-height: 400px;
-      object-fit: cover;
+      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+      background-color: #f4f6f8;
       border-radius: 8px;
       margin-top: 1rem;
     }
@@ -112,8 +115,8 @@
     <h2>Project Overview</h2>
     <p>
       I participated in a 9-week unmanned drone prototyping course where I gained hands-on
-      experience designing, building, and testing UAVs. This course provided exposure to
-      real-world aerospace systems and emphasized teamwork, troubleshooting, and iterative design.
+      experience designing, building, and testing UAVs. This course emphasized teamwork,
+      troubleshooting, and iterative aerospace system design.
     </p>
 
     <img src="assets/drone.jpg" alt="Drone Project Overview">
@@ -128,12 +131,13 @@
       I built a functional UAV from a kit by assembling the frame, mounting motors and ESCs,
       and ensuring proper mechanical alignment to prevent vibration and instability during flight.
     </p>
-<img src="assets/dronekit.jpg" alt="Drone frame assembly">
+
+    <img src="assets/dronekit.jpg" alt="Drone frame assembly">
+
     <p>
       I also hand-soldered the power and signal connections between the flight controller,
-      receivers, and servos to ensure reliable electrical connections.
+      receivers, and servos to ensure reliable electrical performance.
     </p>
-    
   </div>
 </section>
 
@@ -142,21 +146,21 @@
   <div class="card">
     <h2>ArduPilot Configuration & Flight Control</h2>
     <p>
-      In a group setting, we configured our UAV using ArduPilot software. This involved:
+      In a group setting, we configured our UAV using ArduPilot software. This included:
     </p>
 
     <ul>
-      <li>Frame configuration and motor calibration for stability</li>
+      <li>Frame configuration and motor calibration</li>
       <li>Establishing reliable RC communication links</li>
-      <li>Servo calibration for precise control response</li>
+      <li>Servo calibration for precise control</li>
       <li>Programming flight modes (Stabilize, AltHold, Autonomous)</li>
     </ul>
 
     <p>
-      We validated our setup through bench testing, indoor flight trials, and outdoor
-      test flights to improve reliability and performance.
+      We validated performance through bench tests, indoor trials, and outdoor flight testing.
     </p>
-    <img src="assets/dronepilot.jpg" alt="Drone wiring and soldering">
+
+    <img src="assets/dronepilot.jpg" alt="ArduPilot configuration and wiring">
   </div>
 </section>
 
@@ -165,7 +169,7 @@
   <div class="card">
     <h2>Results & Skills Gained</h2>
     <ul>
-      <li>Hands-on UAV mechanical and electrical assembly</li>
+      <li>UAV mechanical and electrical assembly</li>
       <li>Flight controller configuration and tuning</li>
       <li>Soldering and wiring best practices</li>
       <li>Team-based engineering problem solving</li>
