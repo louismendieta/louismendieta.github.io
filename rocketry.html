@@ -40,8 +40,8 @@
     }
 
     h2 {
-      margin-bottom: 1.5rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
     /* ===== CONTENT BLOCK ===== */
@@ -57,19 +57,27 @@
       margin-bottom: 3rem;
     }
 
-.block img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background-color: #f4f6f8;
-}
-
-
     .block h3 {
       margin-top: 0;
       color: #861F41;
     }
 
+    /* ===== IMAGES ===== */
+    .block img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background-color: #f4f6f8;
+      border-radius: 6px;
+    }
+
+    .image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    /* ===== BACK LINK ===== */
     .back-link {
       text-align: center;
       margin: 3rem 0;
@@ -88,6 +96,7 @@
       font-size: 0.9rem;
     }
 
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .block {
         grid-template-columns: 1fr;
@@ -111,14 +120,13 @@
       <h3>Project Overview</h3>
       <p>
         This project was completed as part of a high power rocketry team focused on
-        designing and building a competition-ready rocket. The goal was to achieve
-        reliable flight performance while meeting strict safety and structural
-        requirements.
+        designing and building a competition-ready rocket. The objective was to
+        achieve reliable flight performance while meeting strict structural and
+        safety requirements.
       </p>
       <p>
-        Although this was a team effort, my contributions focused on propulsion-related
-        components, structural manufacturing, and hands-on integration during the build
-        and testing phases.
+        My contributions emphasized propulsion-adjacent components, manufacturing
+        support, and hands-on integration throughout the build and testing phases.
       </p>
     </div>
 
@@ -132,13 +140,12 @@
     <div>
       <h3>CAD & Design (Onshape)</h3>
       <p>
-        I contributed to the CAD development of rocket components using Onshape,
-        supporting iterative design changes for fins, motor mounts, and structural
-        elements.
+        I supported CAD development using Onshape, contributing to fins, motor
+        mounts, and structural components through iterative parametric design.
       </p>
       <p>
-        Version control and real-time collaboration allowed the team to quickly
-        implement changes and maintain consistency across subsystems.
+        Cloud-based version control enabled efficient collaboration and rapid
+        implementation of design changes across subsystems.
       </p>
     </div>
 
@@ -152,19 +159,21 @@
     <div>
       <h3>Manufacturing & Materials</h3>
       <p>
-        I supported manufacturing through 3D printing, fiberglass layups, and laser
-        cutting. These processes were used to produce fins, internal structures, and
-        reinforcement components designed to withstand high aerodynamic and thermal
-        loads.
+        I contributed to manufacturing through 3D printing, fiberglass layups,
+        and laser cutting. These processes were used to fabricate fins, internal
+        structures, and reinforcement components designed to withstand high
+        aerodynamic and thermal loads.
       </p>
       <p>
-        Material selection prioritized strength-to-weight ratio, heat resistance, and
-        structural reliability near the propulsion system.
+        Material selection prioritized strength-to-weight ratio, heat resistance,
+        and structural reliability near the propulsion system.
       </p>
     </div>
 
-    <img src="assets/rocketry2.jpg" alt="Rocket Manufacturing">
-    <img src="assets/rocketry3.jpg" alt="Rocket Manufacturing">
+    <div class="image-stack">
+      <img src="assets/rocketry2.jpg" alt="Fiberglass Layup">
+      <img src="assets/rocketry3.jpg" alt="Laser Cut Rocket Components">
+    </div>
   </div>
 </section>
 
@@ -174,12 +183,13 @@
     <div>
       <h3>Integration & Testing</h3>
       <p>
-        I assisted in final assembly, propulsion system integration, and recovery
-        system installation. Pre-launch checks and ground testing ensured structural
-        integrity and safe deployment mechanisms.
+        I assisted with final assembly, propulsion system integration, and recovery
+        system installation. Pre-launch inspections and ground testing ensured
+        structural integrity and safe deployment mechanisms.
       </p>
       <p>
-        This phase emphasized precision, safety protocols, and cross-team coordination.
+        This phase emphasized precision, safety procedures, and cross-team
+        coordination.
       </p>
     </div>
 
@@ -193,9 +203,10 @@
     <div>
       <h3>What I Learned</h3>
       <p>
-        This project strengthened my understanding of propulsion integration, composite
-        manufacturing, and team-based engineering workflows. It reinforced the importance
-        of iterative design, testing, and clear technical communication.
+        This project strengthened my understanding of propulsion integration,
+        composite manufacturing, and collaborative engineering workflows. It
+        reinforced the importance of iterative design, testing, and clear
+        technical communication.
       </p>
     </div>
 
