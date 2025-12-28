@@ -65,15 +65,16 @@
       color: #861F41;
     }
 
-    /* ===== IMAGE FIX (NO TRIMMING) ===== */
+    /* ===== IMAGE (FULL SIZE, NO TRIM, NO GRAY) ===== */
     .card img {
       width: 100%;
       height: auto;
       max-height: 420px;
       object-fit: contain;
-      background-color: #f4f6f8;
+      background-color: transparent;
       border-radius: 8px;
       margin-top: 1rem;
+      display: block;
     }
 
     ul {
@@ -114,9 +115,9 @@
   <div class="card">
     <h2>Project Overview</h2>
     <p>
-      I participated in a 9-week unmanned drone prototyping course where I gained hands-on
-      experience designing, building, and testing UAVs. This course emphasized teamwork,
-      troubleshooting, and iterative aerospace system design.
+      I participated in a 9-week unmanned drone prototyping course where I gained
+      hands-on experience designing, building, and testing UAVs. This course
+      emphasized teamwork, troubleshooting, and iterative aerospace system design.
     </p>
 
     <img src="assets/drone.jpg" alt="Drone Project Overview">
@@ -128,15 +129,16 @@
   <div class="card">
     <h2>Drone Kit Assembly</h2>
     <p>
-      I built a functional UAV from a kit by assembling the frame, mounting motors and ESCs,
-      and ensuring proper mechanical alignment to prevent vibration and instability during flight.
+      I built a functional UAV from a kit by assembling the frame, mounting motors
+      and ESCs, and ensuring proper mechanical alignment to prevent vibration and
+      instability during flight.
     </p>
 
     <img src="assets/dronekit.jpg" alt="Drone frame assembly">
 
     <p>
-      I also hand-soldered the power and signal connections between the flight controller,
-      receivers, and servos to ensure reliable electrical performance.
+      I also hand-soldered the power and signal connections between the flight
+      controller, receivers, and servos to ensure reliable electrical performance.
     </p>
   </div>
 </section>
@@ -146,7 +148,8 @@
   <div class="card">
     <h2>ArduPilot Configuration & Flight Control</h2>
     <p>
-      In a group setting, we configured our UAV using ArduPilot software. This included:
+      In a group setting, we configured our UAV using ArduPilot software. This
+      included:
     </p>
 
     <ul>
@@ -157,7 +160,8 @@
     </ul>
 
     <p>
-      We validated performance through bench tests, indoor trials, and outdoor flight testing.
+      We validated performance through bench tests, indoor trials, and outdoor
+      flight testing.
     </p>
 
     <img src="assets/dronepilot.jpg" alt="ArduPilot configuration and wiring">
