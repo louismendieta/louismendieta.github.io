@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AONDI Research | Louis Mendieta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #861F41;
+      font-weight: bold;
+    }
+
+    /* ===== HERO ===== */
+    header {
+      background: linear-gradient(135deg, #861F41, #4a0e24);
+      color: white;
+      padding: 5.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.15rem;
+      opacity: 0.9;
+    }
+
+    /* ===== CONTENT ===== */
+    section {
+      max-width: 1000px;
+      margin: 3.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2.2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 3rem;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #861F41;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+      display: block;
+      margin-top: 1.2rem;
+      border-radius: 8px;
+    }
+
+    ul {
+      margin-left: 1.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="index.html">← Back to Portfolio</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header>
+  <h1>AONDI Research</h1>
+  <p>Acousto-Optic Nondestructive Inspection | FEA & Experimental Validation</p>
+</header>
+
+<!-- ===== OVERVIEW ===== -->
+<section>
+  <div class="card">
+    <h2>Project Overview</h2>
+    <p>
+      Contributed to AONDI (Acousto-Optic Nondestructive Inspection), an interdisciplinary
+      research project aimed at detecting hidden structural defects in aerospace materials
+      using acoustic excitation and optical imaging. The objective was to enable reliable
+      nondestructive testing without disassembly or invasive inspection techniques.
+    </p>
+    <p>
+      I joined the project during Fall 2024 as the research team restarted with limited
+      laboratory access. The team pivoted toward computational modeling and acoustic-based
+      testing, focusing on validating finite element predictions through experimental vibration
+      visualization on aluminum test plates.
+    </p>
+
+    <img src="assets/aondi_overview.jpg" alt="AONDI experimental overview">
+  </div>
+</section>
+
+<!-- ===== FEA ===== -->
+<section>
+  <div class="card">
+    <h2>Finite Element Analysis & Modal Simulation</h2>
+    <p>
+      Developed finite element models in SolidWorks to predict resonant frequencies and mode
+      shapes for 6061 aluminum plates measuring 300 mm × 300 mm × 3 mm. Conducted modal and
+      harmonic response studies across a 0–1000 Hz range, identifying a dominant resonance at
+      approximately 315 Hz with less than 5% deviation from analytical calculations.
+    </p>
+    <p>
+      Addressed early mesh convergence issues that caused frequency variations of up to 20%
+      by refining element density to 1 mm. The sensitivity of modal results to material
+      properties reinforced the importance of accurate alloy selection for reliable simulation
+      outcomes in defect detection research.
+    </p>
+
+    <img src="assets/aondi_fea.jpg" alt="FEA modal analysis mode shape">
+  </div>
+</section>
+
+<!-- ===== CAD & SETUP ===== -->
+<section>
+  <div class="card">
+    <h2>CAD Design & Experimental Apparatus</h2>
+    <p>
+      Designed parametric CAD assemblies of the complete experimental setup in SolidWorks,
+      including aluminum test plates, bass driver mounting systems, fixtures, and camera
+      positioning. Ensured geometric consistency between simulation models and physical
+      hardware to allow meaningful comparison of predicted and observed vibration patterns.
+    </p>
+    <p>
+      Assisted with experimental integration tasks such as amplifier upgrades, mounting
+      hardware installation, and camera alignment. Documented assembly constraints and
+      procedures to support future project iterations and lab continuity.
+    </p>
+
+    <img src="assets/aondi_setup.jpg" alt="AONDI experimental CAD assembly">
+  </div>
+</section>
+
+<!-- ===== EXPERIMENT ===== -->
+<section>
+  <div class="card">
+    <h2>Experimental Validation & Image Analysis</h2>
+    <p>
+      Conducted experimental trials by exciting aluminum plates at predicted resonant
+      frequencies and visualizing vibration patterns using salt displacement methods.
+      Captured optical data with high-resolution imaging to observe standing wave formations
+      corresponding to modal predictions.
+    </p>
+    <p>
+      Implemented basic image processing techniques in Python, converting captured frames to
+      grayscale and performing pixel-wise subtraction to isolate vibration patterns.
+      Comparisons between processed images and FEA mode shapes confirmed detectable trends,
+      while also identifying limitations caused by underpowered amplification hardware.
+    </p>
+
+    <img src="assets/aondi_experiment.jpg" alt="Salt vibration pattern visualization">
+  </div>
+</section>
+
+<!-- ===== TOOLS ===== -->
+<section>
+  <div class="card">
+    <h2>Tools & Skills</h2>
+    <ul>
+      <li>SolidWorks FEA (modal analysis, harmonic response)</li>
+      <li>Mesh convergence analysis and refinement</li>
+      <li>Parametric CAD modeling and assembly design</li>
+      <li>Experimental apparatus design and integration</li>
+      <li>Basic image processing (Python, OpenCV)</li>
+      <li>Material property analysis for structural simulation</li>
+      <li>Cross-functional research collaboration</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== LEARNING ===== -->
+<section>
+  <div class="card">
+    <h2>What I Learned</h2>
+    <p>
+      This project deepened my understanding of modal analysis and highlighted the critical
+      role of mesh convergence in achieving accurate FEA results. I gained practical insight
+      into how material properties influence simulation accuracy and how experimental
+      limitations affect validation outcomes. Working in an interdisciplinary research
+      environment reinforced the importance of documentation, iteration, and aligning
+      computational models with real-world constraints.
+    </p>
+  </div>
+</section>
+
+<!-- ===== CREDIT ===== -->
+<section>
+  <div class="card">
+    <h2>Project Credit</h2>
+    <p>
+      Research conducted under the mentorship of <strong>Dr. David Gray</strong>  
+      <br>Virginia Tech | IDPro | Fall 2024  
+      <br>Team-based interdisciplinary research project
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Louis Mendieta
+</footer>
+
+</body>
+</html>
 
